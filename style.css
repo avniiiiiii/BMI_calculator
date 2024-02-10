@@ -1,10 +1,42 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-      /* // the width and height specified for an element will include the padding and border, rather than being added to it. */
-}  
-body{
-    background-color:#e3c7e9;
-    min-height:100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* // the width and height specified for an element will include the padding and border, rather than being added to it. */
+}
+body {
+  background-color: #f0d6c985;
+  min-height: 100vh;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box {
+  background-color: #ebc7e167;
+  min-width: 400px;
+  border-radius: 2rem;
+  text-align: center;
+  position:relative;
+}
+/* //for transparent background// */
+.box::before{
+    content:'';
+    position:absolute;
+    height:110%;
+    width:110%;
+    left:-5%;
+    top:-5%;
+    background-color:rgba(255,255,255,0.2);
+    box-shadow:0px 0px 166px -31px rgba(0,0,0,0.15);
+    border-radius: 3rem;
+    z-index:-1;
+}
+
+h1{
+    font-size:2.5rem;
+    padding:30px 0;
+    font-weight:bold;
 }
