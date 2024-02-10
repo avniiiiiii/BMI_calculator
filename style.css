@@ -69,10 +69,43 @@ h1 {
   font-size:25px;
 }
 button#calculate {
-    background-color: #918ac539;
+    background-color: #cbc6f2bf;
     color: black;
     font-size: 16px;
     padding: 12px 0;
     width: 100%;
+    border-radius:12px;
+    outline:none;
+    border:none;
+    
 }
+button#calculate:hover{
+    background-color:#897edc;
+   
+}
+.result{
+  padding:30px 20px;
+}
+.result p{
+  font-weight:600;
+  font-size:16px;
+  color:black;
+  margin-bottom:15px;
+}
+#result {
+  font-weight: 900;
+  font-size: 36px;
+  background-color: rgba(174, 169, 169, 0.115);
+  color:#897edc;
+  /* so it doesn't take the entire space */
+  display:inline-block;
+  padding:7px 20px;
+  border-radius:0.5rem;
+  /* to create gap with comment */
+  margin-bottom:25px;
 
+}
+#comment{
+  color:#897edc;
+  font-weight:900;
+}
