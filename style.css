@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+      /* // the width and height specified for an element will include the padding and border, rather than being added to it. */
+}  
+body{
+    background-color:#e3c7e9;
+    min-height:100vh;
+}
