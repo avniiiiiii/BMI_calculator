@@ -14,4 +14,7 @@ btn.addEventListener("click", () => {
   let bodymassidx = weight / (height * height);
   bodymassidx = bodymassidx.toFixed(2); //2 numbers after decimal
   console.log(bodymassidx);
+  //we have to display our bmi in result
+  const bminum = document.querySelector("#result");
+  bminum.innerHTML = bodymassidx;
 });
