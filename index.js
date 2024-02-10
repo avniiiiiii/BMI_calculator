@@ -17,4 +17,18 @@ btn.addEventListener("click", () => {
   //we have to display our bmi in result
   const bminum = document.querySelector("#result");
   bminum.innerHTML = bodymassidx;
+  //determining status
+  let status = "";
+  if (bodymassidx < 18.5) {
+    status = "Underweight";
+  } else if (bodymassidx >= 18.5 && bodymassidx < 25) {
+    status = "Healthy";
+  } else if (bodymassidx >= 25 && bodymassidx < 30) {
+    status = "Overweight";
+  } else if (bodymassidx >= 30) {
+    status = "Obese";
+  }
+  document.querySelector(
+    ".comment"
+  ).innerHTML = `Comment: You are <span id="comment">${status}</span>`;
 });
