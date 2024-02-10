@@ -109,3 +109,18 @@ button#calculate:hover{
   color:#897edc;
   font-weight:900;
 }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+  .box {
+    min-width: 300px; /* Adjust as needed */
+  }
+}
+
+/* Media queries for mobile phones including iPhones */
+@media only screen 
+  and (max-device-width: 767px) {
+  .box {
+    min-width: 250px; /* Adjust as needed */
+  }
+}
